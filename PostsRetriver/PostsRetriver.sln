@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostsRetriver", "PostsRetriver\PostsRetriver.csproj", "{E39AEC8D-41AD-4E0B-A143-CD61D032FE4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostsRetriver.Test", "PostsRetriver.Test\PostsRetriver.Test.csproj", "{A0BD695A-5A79-44A9-91B1-9C62707E424D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E39AEC8D-41AD-4E0B-A143-CD61D032FE4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E39AEC8D-41AD-4E0B-A143-CD61D032FE4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E39AEC8D-41AD-4E0B-A143-CD61D032FE4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E39AEC8D-41AD-4E0B-A143-CD61D032FE4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0BD695A-5A79-44A9-91B1-9C62707E424D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0BD695A-5A79-44A9-91B1-9C62707E424D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0BD695A-5A79-44A9-91B1-9C62707E424D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0BD695A-5A79-44A9-91B1-9C62707E424D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
