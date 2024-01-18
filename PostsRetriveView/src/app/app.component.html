@@ -1,0 +1,57 @@
+<div class='card'>
+  <div class='card-header'>
+    {{pageTitle}}
+  </div>
+  <div class='card-body'>
+    <div class='row'>
+      <div class='col-md-2'>Serach by:</div>
+      <div class='col-md-2'>
+        <label for="tags" class="form-label">Tags:</label>
+        <input id="tags" class="form-control" type='text'
+               [(ngModel)]='search' />
+      </div>
+      <div class='col-md-2'>
+        <label class="form-label" for="sortBy">Sort By:</label>
+        <select class="form-select" id="sortBy" [(ngModel)]="selectedSortBy" (change)="onSortByChange(selectedSortBy)">
+          <option *ngFor="let option of sortByOptions" [value]="option">{{ option }}</option>
+        </select>
+      </div>
+      <div class='col-md-2'>
+        <label class="form-label" for="direction">Direction:</label>
+        <select class="form-select" id="direction" [(ngModel)]="selectedDirection" (change)="onDirectionChange(selectedDirection)">
+          <option *ngFor="let option of directionOptions" [value]="option.value">{{ option.label }}</option>
+        </select>
+      </div>
+      <div class='col-md-2'>
+        <button (click)="SerchPosts()" class="btn btn-primary">Search</button>
+      </div>    
+    </div>       
+    <div class='table-responsive'>
+      <table class='table'
+             *ngIf='posts.length'>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Author</th>
+            <th>Likes</th>
+            <th>Popularity</th>
+            <th>Reads</th>
+            <th>Tags</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let post of posts'>
+            <td>{{ post.id }}</td>
+            <td>{{ post.author }}</td>
+            <td>{{ post.likes }}</td>
+            <td>{{ post.popularity }}</td>
+            <td>{{ post.reads }}</td>
+            <td>{{ post.tags }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
